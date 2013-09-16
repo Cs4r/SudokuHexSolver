@@ -2,7 +2,7 @@
 
 SudokuHexSolver es un software que utiliza técnicas de búsqueda heurística para la resolución de sudokus hexadecimales.
 
-Un sudoku hexadecimal es una variante del sudoku tradicional en la que tablero es de tamaño 16x16 y está formado por bloques de tamaño 4x4 que se rellenan con dígitos hexadecimales (del 0 al 9 y de la A a la F).
+Un sudoku hexadecimal es una variante del sudoku tradicional en la que el tablero es de tamaño 16x16 y está formado por bloques de tamaño 4x4 que se rellenan con dígitos hexadecimales (del 0 al 9 y de la A a la F).
 
 
 ##2. Algoritmo
