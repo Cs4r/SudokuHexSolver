@@ -1,13 +1,13 @@
-##1. SudokuHexSolver
+# 1. SudokuHexSolver
 
 SudokuHexSolver es un software que utiliza técnicas de búsqueda heurística para la resolución de sudokus hexadecimales.
 
 Un sudoku hexadecimal es una variante del sudoku tradicional en la que el tablero es de tamaño 16x16 y está formado por bloques de tamaño 4x4 que se rellenan con dígitos hexadecimales (del 0 al 9 y de la A a la F).
 
 
-##2. Algoritmo
+## 2. Algoritmo
 
-###2.1  Técnicas de propagación de restricciones utilizadas
+### 2.1  Técnicas de propagación de restricciones utilizadas
 
 Para almacenar los posibles valores de cada casilla del tablero he utilizado una matriz de 16x16 enteros, pudiendo representar todos los valores permitidos de una casilla del sudoku con un sólo número entero. Esto lo he conseguido codificando cada valor posible de una casilla como un bit activo en dicho entero. Así si el bit de la posición b está activo en la casilla i,j de la matriz de valores permitidos significa que la casilla i, j del tablero admite a b como posible valor.
 
@@ -17,7 +17,7 @@ Esta codificación también permite de manera muy eficiente (a nivel de bit) con
 
 Nota: Las casillas que están ocupadas en el tablero tienen establecido a 0 (ningún bit activo, ergo ningún posible valor) su valor correspondiente en la matriz de valores posibles para las casillas.
 
-###2.2 Técnicas de búsqueda y heurísticas utilizadas	
+### 2.2 Técnicas de búsqueda y heurísticas utilizadas	
 
 Mi algoritmo de resolución de sudokus hexadecimales consiste en aplicar iterativamente (y por el orden en el que aparecen) las siguientes técnicas:
 	 
@@ -39,16 +39,16 @@ El algoritmo finaliza cuando están rellenas las 256 casillas del sudoku hexadec
 
 Nota: las restricciones del sudoku inicial se computan antes de aplicar estas técnicas y cada vez que se rellena una casilla se actualizan siguiendo las reglas del sudoku.
 
-##3. Ejecución
+## 3. Ejecución
 
-###3.1 Compilar 
+### 3.1 Compilar 
 
 <pre>
 cd src
 javac SudokuHex.java Test.java
 </pre>
 
-###3.2 Ejecutar
+### 3.2 Ejecutar
 
 <pre>
 java Test ../boards/<cualquiera>.txt
